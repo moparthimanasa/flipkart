@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #2874f0;
+    color: #fff;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.search-bar {
+    flex: 1;
+    display: flex;
+    margin: 0 1rem;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #ff9f00;
+    color: #fff;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.user-actions button {
+    background-color: #ff9f00;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    background-color: #f1f3f6;
+}
+
+.category {
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.category img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.category p {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.deals {
+    padding: 1rem;
+    background-color: #fff;
+}
+
+.deals h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #2874f0;
+}
+
+.deal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.deal img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #2874f0;
+    color: #fff;
+    margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        margin-bottom: 0.5rem;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .category {
+        flex: 1 1 calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+}
